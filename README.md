@@ -1,1 +1,111 @@
-# Virtual-lab
+# ⚗️ VIRTUAL-LAB — 2D Physics Simulation Platform
+
+> A collaborative "Digital Twin" environment for university-level physics learning. Build machines, test structural integrity, and observe real-time forces in a shared, high-fidelity workspace.
+
+## 🚀 What is VIRTUAL-LAB?
+
+Teaching complex physics online is often limited to static videos and non-interactive text. VIRTUAL-LAB bridges the gap between theoretical equations and physical reality through hands-on experimentation in a browser.
+
+Multiple users can simultaneously build physics machines, run experiments, and observe results — all in real time.
+
+---
+
+## ✨ Features
+
+- **🎮 Interactive Physics Canvas** — Drag, drop, and configure physical bodies (blocks, disks, rods, wedges). Connect them with springs, ropes, hinges, and motors
+- **👥 Live Multiplayer Rooms** — Create or join a room with a 6-character code. Physics state syncs across all users in real time
+- **📊 Real-Time Analytics Dashboard** — Live charts for kinetic energy, potential energy, velocity, angular momentum, and total system energy
+- **🔬 17 Built-in Experiments** — Pre-configured university-level simulations across 4 physics domains
+- **💾 Cloud Save & Load** — Save your scenes to the cloud and restore them from any device
+- **🔍 Body Inspector** — Select any body to edit mass, friction, restitution, color, body type, and more
+- **⚙️ Material Presets** — Wood, Steel, Rubber, Ice, Concrete, Plastic with accurate physical properties
+
+---
+
+## 🧪 Experiment Domains
+
+| Domain | Experiments |
+|--------|------------|
+| **Newton's Laws** | Atwood's Machine, Projectile Motion, Newton's Cradle, Elastic Collisions |
+| **Oscillations & SHM** | Spring-Mass, Double Pendulum, Coupled Oscillators, Damped Oscillation |
+| **Rotational Motion** | Pulley System, Rolling on Incline, Gyroscope, Gear Train |
+| **Advanced Systems** | Kepler Orbits, Chaotic Pendulum, Wave Machine |
+
+---
+
+## 🛠️ Tech Stack
+
+- React (UI)
+- Matter.js (physics engine)
+- Supabase (backend: auth, cloud saves, multiplayer)
+- Motion/React (animations)
+- Recharts (analytics charts)
+- Lucide React (icons)
+
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── pages/
+│   │   ├── HomePage.tsx        # Landing page
+│   │   └── LabPage.tsx         # Main lab shell
+│   └── components/
+│       ├── PhysicsCanvas.tsx   # Core physics engine + canvas
+│       ├── ToolPanel.tsx       # Left sidebar — body & tool picker
+│       ├── ControlPanel.tsx    # Physics parameter sliders
+│       ├── AnalyticsDashboard.tsx  # Live energy charts
+│       ├── SelectionInspector.tsx  # Body property editor
+│       ├── ExperimentLibrary.tsx   # 17 preset experiments
+│       ├── SavedExperiments.tsx    # Cloud save/load
+│       ├── RoomPanel.tsx       # Multiplayer rooms + chat
+│       ├── AuthModal.tsx       # Sign in / Sign up
+│       ├── WelcomeScreen.tsx   # Onboarding screen
+│       ├── experimentDefinitions.ts  # All 17 experiment setups
+│       └── materials.ts        # Material physics presets
+└── styles/
+    └── virtual-lab.css         # Main stylesheet
+utils/
+└── supabase/
+    └── client.ts               # Backend API helpers
+```
+
+---
+
+## ⚡ Getting Started
+
+
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Open in browser
+http://localhost:5173
+---
+
+
+
+
+## 📖 How to Use
+
+1. Open the app and click **Launch Lab**
+2. Pick a tool from the left panel (block, disk, spring, rope…)
+3. Click on the canvas to place bodies
+4. Connect bodies with springs or ropes
+5. Press **Play** to run the simulation
+6. Open **Experiment Library** to load a preset experiment
+7. Watch live energy data in the **Analytics** tab
+
+
+
+
+## 📄 License
+
+MIT
+
+
