@@ -461,7 +461,7 @@ function LabShell() {
             className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-6"
             onClick={(e) => { if (e.target === e.currentTarget) setShowExperiments(false); }}>
             <motion.div initial={{ scale: 0.95, opacity: 0, y: 10 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.95, opacity: 0, y: 10 }}
-              className="bg-zinc-950 border border-zinc-700 rounded-2xl w-full max-w-4xl flex flex-col" style={{ maxHeight: '85vh' }}>
+              className="bg-zinc-950 border border-zinc-700 rounded-2xl w-full max-w-4xl flex flex-col" style={{ height: '85vh' }}>
               <div className="flex items-center justify-between px-6 py-4 border-b border-zinc-800 shrink-0">
                 <div className="flex items-center gap-3">
                   <FlaskConical className="w-5 h-5 text-blue-400" />
