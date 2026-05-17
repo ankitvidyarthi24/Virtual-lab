@@ -149,7 +149,7 @@ export function ExperimentLibrary({ onLoadExperiment, onClose }) {
     : EXPERIMENTS.filter(e => e.category === activeCategory);
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col flex-1 min-h-0">
       {/* Category filter */}
       <div className="px-6 py-3 border-b border-zinc-800 flex gap-2 overflow-x-auto">
         {categories.map(cat => {
