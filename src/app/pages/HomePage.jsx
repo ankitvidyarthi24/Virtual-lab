@@ -78,7 +78,7 @@ const FEATURES = [
 ];
 
 const STEPS = [
-  { n: '01', title: 'Choose an Experiment', desc: 'Browse 17 university-level simulations across mechanics, oscillations, and orbital physics.' },
+  { n: '01', title: 'Choose an Experiment', desc: 'Browse 16 university-level simulations across mechanics, oscillations, and orbital physics.' },
   { n: '02', title: 'Tune Parameters', desc: 'Adjust mass, spring constant, gravity, damping, and more with live sliders that update the simulation instantly.' },
   { n: '03', title: 'Interact & Observe', desc: 'Drag bodies, apply forces, attach springs — watch the analytics charts respond in real time.' },
   { n: '04', title: 'Collaborate', desc: 'Create a room, share the code with classmates, and simulate together from anywhere.' },
@@ -360,7 +360,7 @@ function Hero({ onSignUp, onSignIn }) {
           style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 16px', background: 'rgba(24,24,27,0.9)', border: '1px solid rgba(63,63,70,0.8)', borderRadius: 9999, backdropFilter: 'blur(4px)' }}>
           <motion.span style={{ width: 8, height: 8, borderRadius: '50%', background: '#34d399', display: 'block' }}
             animate={{ opacity: [1, 0.3, 1] }} transition={{ duration: 1.6, repeat: Infinity }} />
-          <span style={{ fontSize: 11, fontFamily: 'monospace', color: '#d4d4d8', letterSpacing: '0.2em' }}>17 EXPERIMENTS · MATTER.JS · REAL-TIME MULTIPLAYER</span>
+          <span style={{ fontSize: 11, fontFamily: 'monospace', color: '#d4d4d8', letterSpacing: '0.2em' }}>16 EXPERIMENTS · MATTER.JS · REAL-TIME MULTIPLAYER</span>
         </motion.div>
 
         {/* Headline */}
@@ -416,7 +416,7 @@ function Hero({ onSignUp, onSignIn }) {
         <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.55 }}
           style={{ display: 'flex', alignItems: 'stretch', marginTop: 8 }}>
           {[
-            { v: '17+', l: 'Experiments', icon: FlaskConical },
+            { v: '16+', l: 'Experiments', icon: FlaskConical },
             { v: '60', l: 'FPS Physics', icon: Zap },
             { v: '4', l: 'Domains', icon: Layers },
             { v: '∞', l: 'Parameters', icon: SlidersHorizontal },
@@ -586,7 +586,7 @@ function ExperimentsSection() {
             <span style={{ fontSize: 11, fontFamily: 'monospace', color: '#d4d4d8', letterSpacing: '0.05em' }}>EXPERIMENT LIBRARY</span>
           </div>
           <h2 style={{ fontFamily: 'monospace', color: '#f4f4f5', fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', letterSpacing: '-0.03em', margin: '12px 0 0' }}>
-            17 University-Level Simulations
+            16 University-Level Simulations
           </h2>
           <p style={{ color: '#a1a1aa', marginTop: 12, maxWidth: 576, marginLeft: 'auto', marginRight: 'auto', fontSize: '0.95rem' }}>
             Each experiment uses real governing equations — no hand-wavy approximations.
